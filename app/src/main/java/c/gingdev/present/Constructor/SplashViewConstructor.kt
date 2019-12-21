@@ -1,10 +1,11 @@
 package c.gingdev.present.Constructor
 
 interface SplashViewConstructor {
-    interface view {
+    interface View {
 
     }
-    interface presenter {
+    interface Presenter {
+        val view: View
 
     }
 }

@@ -1,5 +1,8 @@
 package c.gingdev.present.Presenter
 
-class SplashPresenter {
+import c.gingdev.present.Constructor.SplashViewConstructor
+
+class SplashPresenter(override val view: SplashViewConstructor.View)
+    : SplashViewConstructor.Presenter {
 
 }
