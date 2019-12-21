@@ -1,7 +1,5 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 
 android {
@@ -34,14 +32,13 @@ ext {
     glideVersion = '4.10.0'
     glideCompilerVersion = '4.9.0'
 }
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
 //    core
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$coreVersion"
     implementation "androidx.core:core-ktx:$coreVersion"
+    implementation group: 'com.kakao.sdk', name: 'kakaotalk', version: '1.14.0'
 
 //    layout
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
